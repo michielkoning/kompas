@@ -1,0 +1,52 @@
+aside {
+	padding: 0 15px 0;
+	float: left;
+	width: 33.33333%;
+	@media (max-width: $screen-sm-max) {
+		padding-top: 0;
+		width: auto;
+		float: none;
+	}
+}
+
+.widget {
+	@include clearfix();
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background: $gray-light;
+	padding: 0 15px 15px;
+	ul {
+		@include list-unstyled();
+	}
+	li {
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		color: $text-color;
+	}
+	.btn {
+		color: #fff;
+	}
+	.image {
+		width: 200px;
+		margin: 15px auto 0;
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 5px;
+		}
+	}
+}
+
+.widget-share {
+	a {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	img {
+		width: 40px;
+	}
+}

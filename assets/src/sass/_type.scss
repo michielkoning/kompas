@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../fonts/Gotham-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Gotham-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Gotham-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/Gotham-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Gotham-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Gotham-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Gotham-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg'); /* Legacy iOS */
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-family-headings;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: $line-height;
+  margin-bottom: ($line-height-computed / 2);
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: ($line-height-computed);
+  margin-bottom: 0;
+}
+
+h4, .h4 {
+  font-weight: 700;
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}

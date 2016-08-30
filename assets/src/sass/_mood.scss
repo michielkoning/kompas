@@ -1,0 +1,87 @@
+.mood {
+  display: flex;
+  align-items: center;
+  position: relative;
+	background: no-repeat center right;
+	background-size: cover;
+	height: 360px;
+  @media (max-width: $screen-sm-max) {
+    height: 240px;
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 160px;
+  }
+}
+
+.tabs {
+  @include list-unstyled;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  @media (max-width: $screen-sm-max) {
+    display: none;
+  }
+  li {
+    flex-grow: 1;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  a {
+    transition: .2s all ease-out;
+    font-size: 17px;
+    padding: 10px 0;
+    text-align: center;
+    text-indent: -20px;
+    color: #fff;
+    background: rgba(61, 50, 45, 0.5);
+    display: block;
+    position: relative;
+    &:after {
+      @extend .glyphicon;
+      content: '\e807';
+      color: #fff;
+      position: absolute;
+      right: 5px;
+      font-size: 20px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &.active,
+    &:hover {
+      text-decoration: none;
+      background: rgba(61, 50, 45, 0.9);
+    }
+    @media (max-width: $screen-md-max) {
+      font-size: 14px;
+      padding: 8px 0;
+    }
+  }
+}
+
+
+.mood-title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 1px 1px  #000;
+  line-height: 1.2;
+  font-family: $font-family-mood;
+  margin-bottom: 40px;
+  @media (max-width: $screen-sm-max) {
+    font-size: 28px;
+  }
+  @media (max-width: $screen-sm-max) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}

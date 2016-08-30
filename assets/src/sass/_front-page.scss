@@ -1,0 +1,26 @@
+.front-page {
+	padding-bottom: $page-padding-bottom;
+}
+
+.lead {
+	position: relative;
+	padding-right: 360px;
+	margin: 10px 0 20px;
+	@media (max-width: $screen-sm-max) {
+		padding-right: 0;
+	}
+	.btn {
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		@media (max-width: $screen-sm-max) {
+			position: static;
+		}
+	}
+}
+
+.slogan {
+	font-family: $font-family;
+	font-size: 20px;
+	margin-bottom: 25px;
+}

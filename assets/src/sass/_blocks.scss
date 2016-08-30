@@ -1,0 +1,67 @@
+.blocks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	align-content: stretch;
+	padding-bottom: 20px;
+}
+
+.block {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px 30px;
+	border-radius: 10px;
+	background: $gray-light;
+	width: calc(50% - 30px);
+	@media (max-width: $screen-sm-max) {
+		width: calc(50% - 30px) !important;
+	}
+	@media (max-width: $screen-xs-max) {
+		width: calc(100% - 30px) !important;
+	}
+	.text {
+		padding: 0 15px 15px;
+	}
+	.btn {
+		margin: 0 15px 15px;
+	}
+}
+
+.front-page {
+	.block {
+		width: calc((100% / 3) - 30px);
+	}
+}
+
+.expertises-count-5 {
+	.block {
+		&:nth-child(4),
+		&:nth-child(5) {
+			width: 50%;
+			width: calc(50% - 30px);
+		}
+		@media (max-width: $screen-sm-max) {
+			width: calc(50% - 30px);
+			&:nth-child(5) {
+				width: calc(100% - 30px);
+			}
+		}
+		@media (max-width: $screen-xs-max) {
+			width: calc(100% - 30px) !important;
+		}
+	}
+
+}
+
+.block-footer {
+	margin-top: auto;
+}
+
+.bg-image {
+	height: 160px;
+	background: no-repeat center center;
+	background-size: cover;
+	border-radius: 10px 10px 0 0;
+}

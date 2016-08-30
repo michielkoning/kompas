@@ -1,0 +1,48 @@
+.team {
+	margin: 0 -30px;
+	padding-bottom: 30px;
+	background: #fafafa;
+	@media (max-width: $screen-xs-max) {
+		margin: 0 -15px;
+	}
+}
+
+.profile {
+	@include clearfix();
+	padding: 40px 30px;
+	background: linear-gradient(#fff 0, #fafafa 60px);
+	.image {
+		display: block;
+		float: left;
+		width: 33.33333%;
+		padding: 70px 15px 0;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		@media (max-width: $screen-sm-max) {
+			padding: 15px 0;
+			width: auto;
+			float: none !important;
+			width: 200px;
+			margin: 0 auto;
+		}
+	}
+	&:nth-child(even) {
+		.image {
+			float: right;
+		}
+	}
+	.text {
+		float: left;
+		width: 66.66667%;
+		padding: 0 15px;
+		@media (max-width: $screen-sm-max) {
+			width: auto;
+			float: none;
+		}
+	}
+	@media (max-width: $screen-sm-max) {
+		padding: 30px 15px;
+	}
+}

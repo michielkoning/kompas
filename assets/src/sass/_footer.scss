@@ -1,0 +1,91 @@
+footer {
+	@include clearfix();
+	padding: 20px $grid-gutter-width / 2 80px;
+	background: #6a6666;
+	color: #fff;
+	@media (max-width: $screen-xs-max) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	a {
+		color: #fff;
+		&:hover,
+		&:focus,
+		&:active {
+			color: #fff;
+		}
+	}
+	ul {
+		@include list-unstyled;
+	}
+	.contact-info a {
+		color: #fff;
+	}
+}
+
+.footer-col {
+	padding: 0 $grid-gutter-width / 2;
+	float: left;
+	width: 25%;
+	@media (max-width: $screen-sm-max) {
+		width: 50%;
+	}
+	@media (max-width: $screen-xs-max) {
+		width: auto;
+		float: none;
+	}
+}
+
+.clearfix-footer-cols {
+	@include clearfix();
+	display: none;
+	@media (max-width: $screen-sm-max) {
+		display: block
+	}
+}
+
+.follow-us {
+	margin-top: 15px;
+
+	a {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	img {
+		width: 40px;
+	}
+}
+
+.footer-latest-posts {
+	p {
+		margin-bottom: 0;
+	}
+	a {
+		text-decoration: underline;
+		&:after {
+	      @extend .glyphicon;
+	      content: '\e807';
+	      color: #fff;
+	      margin-left: 5px;
+    }
+	}
+	li 	{
+		margin-bottom: 20px;
+	}
+}
+
+.partners {
+	img {
+		display: block;
+		width: 100%;
+		max-width: 250px;
+	}
+	a {
+		display: block;
+		margin: 20px 0 20px;
+	}
+	.partner-juridisch-loket {
+		max-width: 200px;
+	}
+}

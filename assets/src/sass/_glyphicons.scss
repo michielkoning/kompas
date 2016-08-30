@@ -1,0 +1,47 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Glyphicons Kompas';
+    src: url('../fonts/glyphicons-kompas.eot');
+    src: url('../fonts/glyphicons-kompas.eot#iefix') format('embedded-opentype'),
+         url('../fonts/glyphicons-kompas.woff') format('woff'),
+         url('../fonts/glyphicons-kompas.ttf') format('truetype'),
+         url('../fonts/glyphicons-kompas.svg#zooom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Catchall baseclass
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Kompas';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.glyphicon-fax:before { content: '\e801'; } /* '' */
+.glyphicon-phone:before { content: '\e802'; } /* '' */
+.glyphicon-linkedin:before { content: '\e803'; } /* '' */
+.glyphicon-facebook:before { content: '\e804'; } /* '' */
+.glyphicon-twitter:before { content: '\e805'; } /* '' */
+.glyphicon-down:before { content: '\e806'; } /* '' */
+.glyphicon-right:before { content: '\e807'; } /* '' */
+.glyphicon-left:before { content: '\e808'; } /* '' */
+.glyphicon-up:before { content: '\e809'; } /* '' */
+.glyphicon-mail:before { content: '\e80a'; } /* '' */
