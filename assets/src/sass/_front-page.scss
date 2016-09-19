@@ -4,23 +4,30 @@
 
 .lead {
 	position: relative;
-	padding-right: 360px;
-	margin: 10px 0 20px;
+	margin: 10px 0 30px;
+	text-align: center;
+}
+
+.btn-lead-top {
+	display: none;
+	position: absolute;
+	right: 0;
+	bottom: 0px;
 	@media (max-width: $screen-sm-max) {
-		padding-right: 0;
+		display: inline-block;
+		position: static;
 	}
-	.btn {
-		position: absolute;
-		right: 0;
-		bottom: 0px;
-		@media (max-width: $screen-sm-max) {
-			position: static;
-		}
+}
+
+.lead-bottom {
+	text-align: center;
+	@media (max-width: $screen-sm-max) {
+		display: none;
 	}
+
 }
 
 .slogan {
 	font-family: $font-family;
 	font-size: 20px;
-	margin-bottom: 25px;
 }

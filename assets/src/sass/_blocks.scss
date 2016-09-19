@@ -33,6 +33,10 @@
 	.block {
 		width: calc((100% / 3) - 30px);
 	}
+
+	.bg-image {
+		margin-bottom: 20px;
+	}
 }
 
 .expertises-count-5 {
@@ -64,4 +68,10 @@
 	background: no-repeat center center;
 	background-size: cover;
 	border-radius: 10px 10px 0 0;
+	padding: 10px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }

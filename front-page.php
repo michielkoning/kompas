@@ -6,7 +6,7 @@
 
 		<div class="lead">
 			<div class="slogan"><?php the_content(); ?></div>
-			<a href="<?php echo home_url(); ?>/contact/" class="btn btn-lg">Nu gratis adviesgesprek aanvragen</a>
+			<a href="<?php echo home_url(); ?>/contact/" class="btn btn-lg btn-lead-top">Nu gratis adviesgesprek aanvragen</a>
 		</div>
 
 	<?php endwhile; endif; ?>
@@ -29,9 +29,9 @@
 				<div class="block">
 
 					<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($expertise->ID), 'medium' ); ?>
-					<div class="bg-image" style="background-image: url('<?php echo $thumbnail[0]; ?>');"></div>
+					<div class="bg-image" style="background-image: url('<?php echo $thumbnail[0]; ?>');"><h2><?php echo $expertise->post_title; ?></h2></div>
 					<div class="text">
-						<h2><?php echo $expertise->post_title; ?></h2>
+
 						<?php if (get_field('intro', $expertise->ID)) : ?>
 							<?php the_field('intro', $expertise->ID); ?>
 						<?php else : ?>
@@ -47,6 +47,10 @@
 			<?php wp_reset_postdata(); ?>
 		</div>
 	<?php endif; ?>
+
+	<div class="lead-bottom">
+		<a href="<?php echo home_url(); ?>/contact/" class="btn-lead-bottom btn btn-lg">Nu gratis adviesgesprek aanvragen</a>
+	</div>
 
 </div>
 
