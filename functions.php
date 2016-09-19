@@ -12,18 +12,19 @@ register_nav_menus(array(
 ));
 
 const EXPERTISE_ID = 8;
+const THEME_VERSION = 5;
 
 function add_scripts() {
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-    wp_register_script( 'kompas_functions', get_template_directory_uri() . '/assets/scripts/functions.js', false, NULL, true );
+    wp_register_script( 'kompas_functions', get_template_directory_uri() . '/assets/scripts/functions.js', false, THEME_VERSION, true );
 
     wp_enqueue_script( array('jquery', 'kompas_functions'));
 }
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
 
 function add_styles() {
-    wp_register_style('kompas', get_template_directory_uri() . '/assets/css/style.css', false, "4");
+    wp_register_style('kompas', get_template_directory_uri() . '/assets/css/style.css', false, THEME_VERSION);
     wp_enqueue_style('kompas');
 }
 add_action( 'wp_enqueue_scripts', 'add_styles' );
