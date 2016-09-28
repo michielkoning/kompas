@@ -12,7 +12,7 @@ register_nav_menus(array(
 ));
 
 const EXPERTISE_ID = 8;
-const THEME_VERSION = 5;
+const THEME_VERSION = 7;
 
 function add_scripts() {
     wp_deregister_script( 'jquery' );

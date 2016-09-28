@@ -11,6 +11,17 @@
   @media (max-width: $screen-xs-max) {
     height: 160px;
   }
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: $image-filter;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
 }
 
 .tabs {
@@ -67,6 +78,7 @@
 
 
 .mood-title {
+  position: relative;
   width: 100%;
   text-align: center;
   color: #fff;

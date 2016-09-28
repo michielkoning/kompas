@@ -69,9 +69,26 @@
 	background-size: cover;
 	border-radius: 10px 10px 0 0;
 	padding: 10px;
-	color: #000;
+	color: #fff;
+	text-shadow: 1px 1px #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	position: relative;
+
+	&:before {
+		border-radius: 10px 10px 0 0;
+		position: absolute;
+		content: '';
+		background: $image-filter;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	h2 {
+		position: relative;
+	}
 }

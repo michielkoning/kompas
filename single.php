@@ -39,7 +39,7 @@
 				<p class="contact-info">
 					<span class="glyphicon glyphicon-mail"></span><a href="mailto:<?php echo esc_attr( get_the_author_meta( 'email', $user->ID ) ); ?>"><?php echo esc_attr( get_the_author_meta( 'email', $user->ID ) ); ?></a><br>
 				</p>
-				<a class="btn" href="<?php echo site_url(); ?>/advocaten#<?php echo get_the_author_meta( 'nicename' ); ?>">
+				<a class="btn" href="<?php echo site_url(); ?>/advocaat#<?php echo get_the_author_meta( 'nicename' ); ?>">
 					<?php printf( 'Lees meer over %s', get_the_author() ); ?>
 				</a>
 			</div>
