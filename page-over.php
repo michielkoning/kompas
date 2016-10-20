@@ -1,11 +1,21 @@
 <?php get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+	<h1><?php the_title(); ?></h1>
+
+	<?php the_content(); ?>
+
+	<p><?php edit_post_link( "Deze pagina bewerken" ); ?> </p>
+
+<?php endwhile; endif; ?>
+
 <div class="team">
 
 	<?php $users = get_users(); ?>
 	<?php foreach ($users as $user) : ?>
 
-		<?php if ($user->display_name != 'admin') : ?>
+		<?php if ($user->display_name != 'michiel') : ?>
 
 			<div class="profile">
 				<a name="<?php echo $user->user_nicename; ?>"></a>
