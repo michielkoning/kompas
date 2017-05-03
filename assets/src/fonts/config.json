@@ -71,6 +71,12 @@
       "css": "bicycle",
       "code": 59392,
       "src": "maki"
+    },
+    {
+      "uid": "0357f7abbc0babf43509669f332e41e6",
+      "css": "mobile",
+      "code": 61707,
+      "src": "fontawesome"
     }
   ]
 }

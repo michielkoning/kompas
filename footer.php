@@ -28,13 +28,14 @@
 			<h2>Adresgegevens</h2>
 			<p>
 				Kompas advocatuur<br>
-				Uppelse Vliet 8<br>
-				5032 BZ Tilburg<br>
+				Tivolistraat 6<br>
+				5017 HP Tilburg<br>
 				KVK nr. 63677776
 			</p>
 			<p class="contact-info">
-				<span class="glyphicon glyphicon-mail"></span><a href="mailto:info@kompas-advocatuur.nl">info@kompas-advocatuur.nl</a><br>
-				<span class="glyphicon glyphicon-phone"></span><a href="tel:040 251 60 30">085 040 7406</a><br>
+				<span class="glyphicon glyphicon-mail"></span><a href="mailto:hoeven@kompas-advocatuur.nl">hoeven@kompas-advocatuur.nl</a><br>
+				<span class="glyphicon glyphicon-phone"></span><a href="tel:085 0407406">085 - 04 07 406</a><br>
+				<span class="glyphicon glyphicon-mobile"></span><a href="tel:06 83611360">06 - 836 113 60</a><br>
 				<span class="glyphicon glyphicon-fax"></span>085 303 7426
 			</p>
 			<a href="https://maps.google.com?daddr=Uppelse+Vliet+8+Tilburg" title="Routebeschrijving" class="btn" target="_blank">Routebeschrijving</a>

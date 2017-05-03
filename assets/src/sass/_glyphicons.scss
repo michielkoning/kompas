@@ -13,6 +13,7 @@
     font-family: 'Glyphicons Kompas';
     src: url('../fonts/glyphicons-kompas.eot');
     src: url('../fonts/glyphicons-kompas.eot#iefix') format('embedded-opentype'),
+         url('../fonts/glyphicons-kompas.woff2') format('woff2'),
          url('../fonts/glyphicons-kompas.woff') format('woff'),
          url('../fonts/glyphicons-kompas.ttf') format('truetype'),
          url('../fonts/glyphicons-kompas.svg#zooom') format('svg');
@@ -45,3 +46,4 @@
 .glyphicon-left:before { content: '\e808'; } /* '' */
 .glyphicon-up:before { content: '\e809'; } /* '' */
 .glyphicon-mail:before { content: '\e80a'; } /* '' */
+.glyphicon-mobile:before { content: '\f10b'; } /* '' */
