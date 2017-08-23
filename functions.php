@@ -93,3 +93,12 @@ function save_extra_user_profile_fields( $user_id ) {
   }
   return true;
 }
+
+
+function access_menu_for_editors(){
+  // get the the role object
+  $role_object = get_role( 'editor' );
+  // add $cap capability to this role object
+  $role_object->add_cap( 'edit_theme_options' );
+}
+add_filter('admin_init', 'access_menu_for_editors');
